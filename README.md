@@ -1,1 +1,1 @@
-cbatai.github.com
+cbat.ai
