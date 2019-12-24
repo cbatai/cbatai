@@ -1,0 +1,11 @@
+{
+  "name": "cbat.ai",
+  "short_name": "cbat.ai",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#00",
+  "description": "cbat.ai",
+  "icons": {
+	  16: "cbat.svg"
+  }
+}
