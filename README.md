@@ -1,1 +1,1 @@
-<b>cbat.ai</b>
+cbat.ai
