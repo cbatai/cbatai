@@ -6,6 +6,9 @@
   "background_color": "#00",
   "description": "cbat.ai",
   "icons": {
-	  64: "favicon.svg"
+	  16: "favicon.svg",
+	  64: "favicon.svg",
+	  192: "favicon.svg",
+	  512: "favicon.svg"
   }
 }
