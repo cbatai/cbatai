@@ -3,5 +3,5 @@ body      { margin: 0px; background-color: #111111 }
 a         { text-decoration: none; color: #0000ff; font-weight: bold }
 html      { overflow-y: scroll }
 div       { width: 100%; box-sizing: border-box; margin: 0px; }
-#head     { text-align: center }
+#head     { text-align: center; margin-top: 1em; margin-bottom: 1em }
 #icon     { text-align: center }
