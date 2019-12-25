@@ -5,6 +5,28 @@
   "display": "standalone",
   "background_color": "#000000",
   "description": "cbat.ai",
+  "icons": [
+    {
+      "src": "favicon.xvg",
+      "type": "image/svg+xml",
+      "sizes": "16x16"
+    },
+    {
+      "src": "favicon.xvg",
+      "type": "image/svg+xml",
+      "sizes": "32x32"
+    },
+    {
+      "src": "favicon.xvg",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicon.xvg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
   "icons": {
 	  "16": "favicon.svg",
 	  "64": "favicon.svg",
