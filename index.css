@@ -1,0 +1,5 @@
+*       { font-family: sans-serif; font-color: #eeeeee }
+body    { margin: 0px; background-color: #111111 }
+a       { text-decoration: none; color: #0000ff; font-weight: bold }
+html	{ overflow-y: scroll }
+div     { width: 100%; box-sizing: border-box; margin: 0px; }
