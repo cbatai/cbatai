@@ -4,7 +4,7 @@ if ('serviceWorker' in navigator) {
       // Registration was successful
 	    if (navigator.serviceWorker.controller == null) {
       		console.log('ServiceWorker registration successful with scope: ', registration.scope);
-		window.location = ".";
+		setTimeout(function() { window.location = "." }, 3000);
 	    } else {
 		    main();
 	    }
