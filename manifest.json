@@ -1,15 +1,13 @@
 {
-  "name": "cbat",
-  "short_name": "cbat",
-  "start_url": ".",
-  "display": "standalone",
-  "background_color": "#000000",
-  "description": "cbat",
-  "icons": [
-    {
-      "src": "favicon.png",
-      "type": "image/png",
-      "sizes": "640x480"
-    }
-  ]
+	"name": "cbat",
+	"short_name": "cbat",
+	"start_url": ".",
+	"display": "standalone",
+	"background_color": "#000000",
+	"description": "cbat",
+	"icons": [{
+		"src": "favicon.png",
+		"type": "image/png",
+		"sizes": "640x480 144x144"
+	}]
 }
