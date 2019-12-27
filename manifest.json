@@ -3,7 +3,7 @@
 	"short_name": "cbat",
 	"start_url": ".",
 	"display": "standalone",
-	"background_color": "#000000",
+	"background_color": "#111111",
 	"description": "cbat",
 	"icons": [{
 		"src": "favicon.png",
