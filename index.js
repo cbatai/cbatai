@@ -19,10 +19,10 @@ function main() {
 				function(err) {
 					console.log('ServiceWorker registration failed: ', err);
 				},
-			);
-		});
+			)
+		})
 	} else {
-		console.log("serviceWorker not found in navigator");
+		console.log("serviceWorker not found in navigator")
 	}
 }
 
