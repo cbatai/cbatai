@@ -31,10 +31,12 @@ div {
 }
 
 #icon {
-   bottom: 10px;
+   bottom: 0px;
    display: block;
    height: 144px;
    left: 0px;
+   margin: auto;
    position: absolute;
    right: 0px;
+   top: 0px;
 }
