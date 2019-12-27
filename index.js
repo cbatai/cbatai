@@ -1,3 +1,5 @@
+window.addEventListener('load', main);
+
 function main() {
 	console.log("main()");
 	if ('serviceWorker' in navigator) {
