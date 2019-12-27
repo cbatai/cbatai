@@ -1,11 +1,11 @@
 {
-	"background_color": "#111111",
+	"background_color": "#888888",
 	"description": "cbat",
 	"display": "standalone",
 	"name": "cbat",
 	"short_name": "cbat",
 	"start_url": "https://cbat.ai",
-	"theme_color": "#000000",
+	"theme_color": "#888888",
 	"icons": [{
 		"sizes": "192x192 512x512",
 		"src": "favicon.png",
