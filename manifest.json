@@ -1,7 +1,7 @@
 {
 	"name": "cbat",
 	"short_name": "cbat",
-	"start_url": "",
+	"start_url": "https://cbat.ai",
 	"display": "standalone",
 	"background_color": "#111111",
 	"description": "cbat",
