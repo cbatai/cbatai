@@ -34,4 +34,7 @@ div {
    bottom: 10px;
    display: block;
    height: 144px;
+   left: 0px;
    position: absolute;
+   right: 0px;
+}
