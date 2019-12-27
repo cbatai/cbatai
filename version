@@ -2,10 +2,9 @@
 
 version=$(date +%s)
 
-echo "var version=$version" >index.js
+echo "var version=$version;" >index.js
+cp index.js service.js
 cat index/*.js >>index.js
-
-echo "var version=$version" >service.js
 cat service/*.js >>service.js
 
 git add .
