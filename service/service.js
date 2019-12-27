@@ -8,7 +8,7 @@ var cacheUrls = [
 
 self.addEventListener('install', function(event) {
 	event.waitUntil(
-		caches.open(version)
+		caches.open("cache")
 		.then(function(cache) {
 			return cache.addAll(cacheUrls);
 		})
@@ -16,8 +16,9 @@ self.addEventListener('install', function(event) {
 })
 
 self.addEventListener('fetch', function(event) {
+	var request = version + ':' + event.request;
 	event.respondWith(
-		caches.match(event.request)
+		caches.match(request)
 		.then(function(response) {
 			if (response) {
 				return response;
@@ -28,9 +29,9 @@ self.addEventListener('fetch', function(event) {
 						return response;
 					}
 					var responseClone = response.clone();
-					caches.open(version)
+					caches.open("cache")
 						.then(function(cache) {
-							cache.put(event.request, responseClone);
+							cache.put(request, responseClone);
 						})
 					return response;
 				}

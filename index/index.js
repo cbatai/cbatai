@@ -27,5 +27,5 @@ function main() {
 }
 
 function main2() {
-	console.log('hello world');
+	console.log(version + ' hello world');
 }

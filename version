@@ -2,7 +2,7 @@
 
 version=$(date +%s)
 
-echo "var version=$version;" >index.js
+echo "var version=\"$version\";" >index.js
 cp index.js service.js
 cat index/*.js >>index.js
 cat service/*.js >>service.js
