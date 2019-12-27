@@ -1,4 +1,3 @@
-var version=1577488560
 window.addEventListener('load', main);
 
 function main() {

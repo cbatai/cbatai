@@ -1,0 +1,42 @@
+* {
+   color: #eeeeee;
+   font-family: sans-serif;
+}
+
+body {
+   background-color: #888888;
+   margin: 0px;
+}
+
+a {
+   color: #0000ff;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+html {
+   overflow-y: scroll
+}
+
+div {
+   box-sizing: border-box;
+   margin: 0px;
+   width: 100%;
+}
+
+#head {
+   margin-bottom: 1em;
+   margin-top: 1em;
+   text-align: center;
+}
+
+#icon {
+   bottom: 0px;
+   display: block;
+   left: 0px;
+   margin: auto;
+   position: absolute;
+   right: 0px;
+   top: 0px;
+   width: 50%;
+}

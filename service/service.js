@@ -1,4 +1,3 @@
-var version=1577488560
 var cacheUrls = [
 	'/',
 	'/favicon.png',
