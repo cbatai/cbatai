@@ -16,6 +16,7 @@ self.addEventListener('install', function(event) {
 })
 
 self.addEventListener('fetch', function(event) {
+	console.log(event.request);
 	var request = version + ':' + event.request;
 	event.respondWith(
 		caches.match(request)
