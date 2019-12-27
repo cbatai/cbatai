@@ -22,7 +22,7 @@ function main() {
 			},
 		)
 	} else {
-		console.log("serviceWorker not found in navigator")
+		console.log("serviceWorker not found in navigator");
 	}
 }
 

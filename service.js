@@ -1,4 +1,6 @@
-var urls = [
+cacheName = Date.now();
+
+var cacheUrls = [
 	'/',
 	'/favicon.png',
 	'/index.css',
@@ -8,9 +10,9 @@ var urls = [
 
 self.addEventListener('install', function(event) {
 	event.waitUntil(
-		caches.open(Date.now())
+		caches.open(cacheName)
 		.then(function(cache) {
-			return cache.addAll(urls);
+			return cache.addAll(cacheUrls);
 		})
 	)
 })
@@ -22,7 +24,19 @@ self.addEventListener('fetch', function(event) {
 			if (response) {
 				return response;
 			}
-			return fetch(event.request);
+			return fetch(event.request).then(
+				function(response) {
+					if (!response || response.status !== 200 || response.type !== 'basic') {
+						return response;
+					}
+					var responseClone = response.clone();
+					caches.open(cacheName)
+						.then(function(cache) {
+							cache.put(event.request, responseClone);
+						})
+					return response;
+				}
+			)
 		})
 	)
 })
