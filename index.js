@@ -1,21 +1,12 @@
-var version="1577516457";
-window.addEventListener('load', main);
-
-function main() {
-	console.log("main()");
+var version="1577558863";
+function init() {
 	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker.register('/service.js').then(
 			function(registration) {
 				if (navigator.serviceWorker.controller == null) {
-					console.log(
-						'ServiceWorker registration successful with scope: ',
-						registration.scope,
-					);
-					setTimeout(function() {
-						window.location = '.';
-					}, 3000);
+					window.location = '.';
 				} else {
-					main2();
+					main();
 				}
 			},
 			function(err) {
@@ -23,10 +14,12 @@ function main() {
 			},
 		)
 	} else {
-		console.log("serviceWorker not found in navigator");
+		console.log('ServiceWorker not found in navigator');
 	}
 }
 
-function main2() {
+function main() {
 	console.log(version + ' hello world');
 }
+
+window.addEventListener('load', init);
