@@ -3,7 +3,7 @@ function init() {
 		navigator.serviceWorker.register('/service.js').then(
 			function(registration) {
 				if (navigator.serviceWorker.controller == null) {
-					//					window.location = '.';
+					window.location = '.';
 				} else {
 					main();
 				}
