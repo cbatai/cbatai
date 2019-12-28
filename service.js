@@ -1,4 +1,4 @@
-var version="1577562022";
+var version="1577563759";
 var cacheUrls = [
 	'/',
 	'/favicon.png',
@@ -10,15 +10,14 @@ var cacheUrls = [
 self.addEventListener('install', event => {
 	event.waitUntil(
 		caches.keys().then(keys => {
-			Promise.all(keys => {
-				//					keys.map(key => {
-				//						console.log(key);
-				//						if (key == version) return Promise.resolve()
-				//						return;
-				//						return caches.delete(key)
-				//					})
-			}).then(caches.open(version).then(cache => cache.addAll(cacheUrls)))
-		})
+			//			Promise.all(keys => {
+			//					keys.map(key => {
+			//						console.log(key);
+			//						if (key == version) return Promise.resolve()
+			//						return;
+			//						return caches.delete(key)
+			//					})
+		}).then(caches.open(version).then(cache => cache.addAll(cacheUrls)))
 	)
 })
 
