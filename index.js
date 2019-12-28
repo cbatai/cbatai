@@ -1,4 +1,4 @@
-var version="1577505642";
+var version="1577516405";
 window.addEventListener('load', main);
 
 function main() {
@@ -28,5 +28,5 @@ function main() {
 }
 
 function main2() {
-	//	console.log(version + ' hello world');
+	console.log(version + ' hello world');
 }
