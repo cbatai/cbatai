@@ -15,7 +15,7 @@ self.addEventListener('install', event => {
 				}).map(function(key) {
 					return caches.delete(key)
 				})).then(
-					return cache.addAll(cacheUrls)
+					cache.addAll(cacheUrls)
 				)
 			})
 		})
