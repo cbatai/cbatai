@@ -3,7 +3,7 @@ window.addEventListener('load', main);
 function main() {
 	console.log("main()");
 	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/service.js').then(
+		navigator.serviceWorker.register('/service.js?' + version).then(
 			function(registration) {
 				if (navigator.serviceWorker.controller == null) {
 					console.log(
