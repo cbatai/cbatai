@@ -1,4 +1,4 @@
-var version="1577503284";
+var version="1577503480";
 window.addEventListener('load', main);
 
 function main() {
@@ -12,7 +12,7 @@ function main() {
 						registration.scope,
 					);
 					setTimeout(function() {
-						window.location = '.';
+						//	window.location = '.';
 					}, 3000);
 				} else {
 					main2();
@@ -28,5 +28,5 @@ function main() {
 }
 
 function main2() {
-	console.log(version + ' hello world');
+	//	console.log(version + ' hello world');
 }
