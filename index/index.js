@@ -11,7 +11,7 @@ function main() {
 						registration.scope,
 					);
 					setTimeout(function() {
-						//	window.location = '.';
+						window.location = '.';
 					}, 3000);
 				} else {
 					main2();
