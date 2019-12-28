@@ -9,7 +9,7 @@ var cacheUrls = [
 self.addEventListener('install', event => {
 	event.waitUntil(
 		caches.open(version).then(cache => {
-			caches.keys().then(function(keys) {
+			caches.keys().then(keys => {
 				return Promise.all(keys => {
 					keys.map(key => {
 						if (key == version) return Promise.resolve()
