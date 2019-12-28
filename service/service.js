@@ -12,7 +12,9 @@ self.addEventListener('install', event => {
 			caches.keys().then(keys => {
 				return Promise.all(keys => {
 					keys.map(key => {
+						console.log(key);
 						if (key == version) return Promise.resolve()
+						return;
 						return caches.delete(key)
 					})
 				}).then(
