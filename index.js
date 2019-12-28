@@ -1,10 +1,10 @@
-var version="1577492151";
+var version="1577493294";
 window.addEventListener('load', main);
 
 function main() {
 	console.log("main()");
 	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/service.js?' + version).then(
+		navigator.serviceWorker.register('/service.js').then(
 			function(registration) {
 				if (navigator.serviceWorker.controller == null) {
 					console.log(
