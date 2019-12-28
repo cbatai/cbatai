@@ -1,4 +1,4 @@
-var version="1577493294";
+var version="1577494672";
 var cacheUrls = [
 	'/',
 	'/favicon.png',
@@ -27,7 +27,6 @@ self.addEventListener('fetch', event => {
 							if (response.ok) {
 								cache.put(event.request, response.clone());
 							}
-							return response;
 							return response;
 						})
 				})
