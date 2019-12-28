@@ -1,10 +1,10 @@
-var version="1577561932";
+var version="1577562022";
 function init() {
 	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker.register('/service.js').then(
 			function(registration) {
 				if (navigator.serviceWorker.controller == null) {
-					window.location = '.';
+					//					window.location = '.';
 				} else {
 					main();
 				}

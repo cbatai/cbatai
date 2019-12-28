@@ -1,4 +1,4 @@
-var version="1577561932";
+var version="1577562022";
 var cacheUrls = [
 	'/',
 	'/favicon.png',
