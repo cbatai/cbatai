@@ -8,4 +8,4 @@ cat service/*.js >>service.js
 git add .
 git commit -m .
 git push
-cat version
+cat version.txt
