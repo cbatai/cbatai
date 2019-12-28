@@ -1,4 +1,4 @@
-var version="1577491762";
+var version="1577492151";
 var cacheUrls = [
 	'/',
 	'/favicon.png',
@@ -17,15 +17,16 @@ self.addEventListener('install', function(event) {
 })
 
 self.addEventListener('fetch', function(event) {
+	var url = event.request.url + '?' + version;
 	event.respondWith(
 		caches.open(version)
 		.then(function(cache) {
-			cache.match(event.request)
+			cache.match(url)
 				.then(function(response) {
 					if (response) {
 						return response;
 					}
-					return fetch(event.request).then(
+					return fetch(url).then(
 						function(response) {
 							if (!response || response.status !== 200 || response.type !== 'basic') {
 								return response;
@@ -33,7 +34,7 @@ self.addEventListener('fetch', function(event) {
 							var responseClone = response.clone();
 							caches.open(version)
 								.then(function(cache) {
-									cache.put(request, responseClone);
+									cache.put(url, responseClone);
 								})
 							return response;
 						}
