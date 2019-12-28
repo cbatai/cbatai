@@ -17,17 +17,8 @@ self.addEventListener('install', event => {
 self.addEventListener('fetch', event => {
 	return caches.open(version).then(cache => {
 		return cache.match(event.request.url).then(response => {
+			console.log(response);
 			return response;
 		})
 	})
 })
-
-//self.addEventListener('fetch', event => {
-//	event.respondWith(
-//		caches.open(version).then(cache => {
-//			return cache.match(event.request.url).then(response => {
-//				return response;
-//			})
-//		})
-//	)
-//})
