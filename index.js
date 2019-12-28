@@ -1,25 +1,27 @@
-var version="1577564746";
+var version="1577565040";
 function init() {
 	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker.register('/service.js').then(
 			function(registration) {
 				if (navigator.serviceWorker.controller == null) {
-					window.location = '.';
+					setTimeout(function() {
+						window.location = '.'
+					}, 1000)
 				} else {
-					main();
+					main()
 				}
 			},
 			function(err) {
-				console.log('ServiceWorker registration failed: ', err);
+				console.log('ServiceWorker registration failed: ', err)
 			},
 		)
 	} else {
-		console.log('ServiceWorker not found in navigator');
+		console.log('ServiceWorker not found in navigator')
 	}
 }
 
 function main() {
-	console.log(version + ' hello world');
+	console.log(version + ' hello world')
 }
 
 window.addEventListener('load', init);
