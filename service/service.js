@@ -13,9 +13,9 @@ self.addEventListener('install', event => {
 				return Promise.all(keys.filter(key => {
 					return key.indexOf(version) !== 0;
 				}).map(function(key) {
-					return caches.delete(key);
+					return caches.delete(key)
 				})).then(
-					cache.addAll(cacheUrls);
+					return cache.addAll(cacheUrls)
 				)
 			})
 		})
