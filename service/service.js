@@ -16,11 +16,7 @@ self.addEventListener('install', event => {
 				//						return;
 				//						return caches.delete(key)
 				//					})
-			}).then(
-				caches.open(version).then(cache => {
-						cache.addAll(cacheUrls)
-					)
-				})
+			}).then(caches.open(version).then(cache => cache.addAll(cacheUrls)))
 		})
 	)
 })
