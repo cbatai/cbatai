@@ -1,4 +1,4 @@
-var version="1577565040";
+var version="1577565057";
 function init() {
 	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker.register('/service.js').then(
