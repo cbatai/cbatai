@@ -1,4 +1,4 @@
-var version="1577505270";
+var version="1577505373";
 var cacheUrls = [
 	'/',
 	'/favicon.png',
@@ -18,7 +18,7 @@ self.addEventListener('install', event => {
 self.addEventListener('fetch', event => {
 	event.respondWith(
 		caches.open(version).then(cache => {
-			cache.match(event.request.url).then(response => {
+			return cache.match(event.request.url).then(response => {
 				return response;
 			})
 		})
