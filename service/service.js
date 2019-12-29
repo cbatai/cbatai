@@ -30,6 +30,7 @@ self.addEventListener('fetch', event => {
 	return caches.open(version).then(cache => {
 		return cache.match(event.request.url).then(response => {
 			return response || fetch(event.request.url).then(response => {
+				console.log(event.requedt.url);
 				cache.add(event.request.url, response.clone());
 				return response;
 			})
