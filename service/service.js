@@ -29,8 +29,10 @@ self.addEventListener('activate', function(event) {
 self.addEventListener('fetch', event => {
 	return caches.open(version).then(cache => {
 		return cache.match(event.request.url).then(response => {
-			console.log(response);
-			return response;
+			return response || fetch(event.request.url).then(response => {
+				cache.add(event.request.url, response.clone());
+				return response;
+			})
 		})
 	})
 })
