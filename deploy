@@ -1,12 +1,11 @@
 #!/bin/bash
 version=$(date +%s)
-	echo $version >version.txt
-	echo "var version=\"$version\";" >index.js
-	cp index.js service.js
+	echo "var version=\"$version\";" >app.js
+	cp app.js wkr.js
 	rm lib.js
-	find ./ix -name '*.js' | xargs cat >>index.js
-	find ./lb -name '*.js' | xargs cat >>lib.js
-	find ./sw -name '*.js' | xargs cat >>service.js
+	find ./app -name '*.js' | xargs cat >>app.js
+	find ./lib -name '*.js' | xargs cat >>lib.js
+	find ./wkr -name '*.js' | xargs cat >>wkr.js
 	git add .
 	git commit -m .
 	git push
