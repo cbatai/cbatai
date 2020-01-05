@@ -1,4 +1,4 @@
-var version="1578183686";
+var version="1578195585";\n
 function init() {
 	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker.register('/wkr.js').then(
