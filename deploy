@@ -4,8 +4,8 @@ version=$(date +%s)
 	find ./app -name '*.js' | xargs cat >>app.js
 	rm -f lib.js
 	find ./lib -name '*.js' | xargs cat >>lib.js
-	echo "var version=\"$version\";" >wkr.js
-	find ./wkr -name '*.js' | xargs cat >>wkr.js
+	echo -e "var version=\"$version\";\n" >swk.js
+	find ./wkr -name '*.js' | xargs cat >>swk.js
 	git add .
 	git commit -m .
 	git push
