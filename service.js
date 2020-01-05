@@ -1,9 +1,10 @@
-var version="1578182300";
+var version="1578182718";
 var cacheUrls = [
 	'/',
 	'/favicon.png',
 	'/index.css',
 	'/index.js',
+	'/lib.js',
 	'/manifest.json'
 ];
 

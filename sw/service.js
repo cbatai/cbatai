@@ -3,6 +3,7 @@ var cacheUrls = [
 	'/favicon.png',
 	'/index.css',
 	'/index.js',
+	'/lib.js',
 	'/manifest.json'
 ];
 

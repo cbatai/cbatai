@@ -4,6 +4,7 @@ version=$(date +%s)
 	echo "var version=\"$version\";" >index.js
 	cp index.js service.js
 	find ./ix -name '*.js' | xargs cat >> index.js
+	find ./lb -name '*.js' | xargs cat >> lib.js
 	find ./sw -name '*.js' | xargs cat >> service.js
 	git add .
 	git commit -m .
