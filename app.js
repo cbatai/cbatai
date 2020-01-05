@@ -1,4 +1,4 @@
-var version="1578195862";
+var version="1578195898";
 
 function init() {
 	if ('serviceWorker' in navigator) {

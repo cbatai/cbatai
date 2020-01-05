@@ -5,7 +5,7 @@ version=$(date +%s)
 	rm -f lib.js
 	find ./lib -name '*.js' | xargs cat >>lib.js
 	echo -e "var version=\"$version\";\n" >swk.js
-	find ./wkr -name '*.js' | xargs cat >>swk.js
+	find ./swk -name '*.js' | xargs cat >>swk.js
 	git add .
 	git commit -m .
 	git push
