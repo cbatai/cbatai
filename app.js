@@ -1,7 +1,7 @@
-var version="1578183285";
+var version="1578183546";
 function init() {
 	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/service.js').then(
+		navigator.serviceWorker.register('/wkr.js').then(
 			function(registration) {
 				if (navigator.serviceWorker.controller == null) {
 					setTimeout(function() {

@@ -1,8 +1,8 @@
 var cacheUrls = [
 	'/',
+	'/app.js',
 	'/favicon.png',
 	'/index.css',
-	'/index.js',
 	'/lib.js',
 	'/manifest.json'
 ];
