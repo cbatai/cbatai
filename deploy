@@ -2,11 +2,11 @@
 version=$(date +%s)
 	echo "var version=\"$version\";" >app.js
 	cp app.js wkr.js
-	rm lib.js
+	rm -f lib.js
 	find ./app -name '*.js' | xargs cat >>app.js
 	find ./lib -name '*.js' | xargs cat >>lib.js
 	find ./wkr -name '*.js' | xargs cat >>wkr.js
 	git add .
 	git commit -m .
 	git push
-	cat version.txt
+	echo $version
