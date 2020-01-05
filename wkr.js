@@ -1,4 +1,4 @@
-var version="1578183546";
+var version="1578183686";
 var cacheUrls = [
 	'/',
 	'/app.js',
