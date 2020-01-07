@@ -1,12 +1,12 @@
 #!/bin/bash
-version=$(date +%s)
-	echo -e "var version=\"$version\";\n" >app.js
-	find ./app -name '*.js' | xargs cat >>app.js
-	rm -f lib.js
-	find ./lib -name '*.js' | xargs cat >>lib.js
-	echo -e "var version=\"$version\";\n" >swk.js
-	find ./swk -name '*.js' | xargs cat >>swk.js
-	git add .
-	git commit -m .
-	git push
-	echo $version
+version="$(date -u +%Y.%m%d.%H%m)"
+echo -e "var version=\"$version\";\n" >app.js
+find ./app -name '*.js' | xargs cat >>app.js
+rm -f lib.js
+find ./lib -name '*.js' | xargs cat >>lib.js
+echo -e "var version=\"$version\";\n" >swk.js
+find ./swk -name '*.js' | xargs cat >>swk.js
+git add .
+git commit -m .
+git push
+echo $version

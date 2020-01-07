@@ -1,4 +1,4 @@
-var version="1578195898";
+var version="2020.0107.2301";
 
 var cacheUrls = [
 	'/',
