@@ -5,7 +5,7 @@ function init() {
 				console.log('navigator.serviceWorker.controller', navigator.serviceWorker.controller);
 				if (navigator.serviceWorker.controller == null) {
 					setTimeout(function() {
-						window.location = '.'
+						//window.location = '.'
 					}, 1000)
 				} else {
 					main()
