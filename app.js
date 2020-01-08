@@ -1,4 +1,4 @@
-var version="2020.0108.0112";
+var version="2020.0108.0115";
 
 function init() {
 	if ('serviceWorker' in navigator) {
