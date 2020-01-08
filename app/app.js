@@ -4,7 +4,7 @@ function init() {
 			function(registration) {
 				if (navigator.serviceWorker.controller == null) {
 					setTimeout(function() {
-						window.location = '.'
+						//window.location = '.'
 					}, 1000)
 				} else {
 					main()
