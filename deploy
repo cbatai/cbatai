@@ -1,5 +1,5 @@
 #!/bin/bash
-version="$(date -u +%Y.%m%d.%H%m)"
+version="$(date -u +%Y.%m%d.%H%M)"
 echo -e "var version=\"$version\";\n" >app.js
 find ./app -name '*.js' | xargs cat >>app.js
 rm -f lib.js
