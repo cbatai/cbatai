@@ -1,4 +1,4 @@
-var version="2020.0108.0115";
+var version="2020.0108.0122";
 
 var cacheUrls = [
 	'/',
@@ -31,7 +31,6 @@ self.addEventListener('activate', function(event) {
 
 self.addEventListener('fetch', event => {
 	if ((event.request.url.indexOf('http') === 0)) {
-
 		return caches.open(version).then(cache => {
 			return cache.match(event.request.url).then(response => {
 				return response || fetch(event.request.url).then(response => {
